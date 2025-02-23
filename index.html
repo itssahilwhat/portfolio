@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Meta Description -->
+  <meta
+          name="description"
+          content="Welcome to my portfolio website. I am Sahil Bhatia, a computer engineering student specializing in data science and machine learning. Explore my projects in Python, R, SQL, and more, and contact me for collaborations."
+  />
+
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Sahil Bhatia's Portfolio">
+  <meta itemprop="description" content="Welcome to my portfolio website. I am Sahil Bhatia, a computer engineering student specializing in data science and machine learning. Explore my projects in Python, R, SQL, and more, and contact me for collaborations.">
+  <meta itemprop="image" content="assets/images/sharing-card.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://your-portfolio-url.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sahil Bhatia's Portfolio">
+  <meta property="og:description" content="Welcome to my portfolio website. I am Sahil Bhatia, a computer engineering student specializing in data science and machine learning. Explore my projects in Python, R, SQL, and more, and contact me for collaborations.">
+  <meta property="og:image" content="assets/images/sharing-card.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sahil Bhatia's Portfolio">
+  <meta name="twitter:description" content="Welcome to my portfolio website. I am Sahil Bhatia, a computer engineering student specializing in data science and machine learning. Explore my projects in Python, R, SQL, and more, and contact me for collaborations.">
+  <meta name="twitter:image" content="assets/images/sharing-card.png">
+
+  <!-- Favicon -->
+  <link
+          rel="shortcut icon"
+          href="assets/images/your-favicon.png"
+          type="image/png"
+  />
+
+  <!-- Preload Fonts -->
+  <link
+          rel="preload"
+          href="assets/fonts/Mona-Sans.woff2"
+          as="font"
+          type="font/woff2"
+          crossorigin
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <title>Sahil Bhatia's Portfolio</title>
+</head>
+
+<body>
+<script>
+  const theme = localStorage.getItem("theme") || "dark";
+  document.body.classList.add(theme);
+</script>
+
+<!-- Header Section -->
+<header class="header">
+  <div class="menu-btn-container">
+    <div class="container">
+      <button type="button" class="menu-btn">menu</button>
+    </div>
+  </div>
+
+  <nav class="nav hidden">
+    <ol class="nav-items">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#work">My Work</a></li>
+      <li class="nav-item"><a href="https://drive.google.com/file/d/1e9_Pa3zxP9pMHCCvp4Hc9qvfXmw-YpDy/view?usp=sharing">Resume</a></li>
+      <li class="nav-item"><a href="#skills">My Skills</a></li>
+      <li class="nav-item">
+        <a href="#contact" data-focused="last-focused">Contact</a>
+      </li>
+    </ol>
+  </nav>
+
+  <div class="container">
+    <div class="header-textbox">
+      <h1 class="h1">
+        <span>Hi, I'm Sahil Bhatia</span>
+        <span>Computer Engineering Student</span>
+      </h1>
+      <p class="header-text">
+        A pre-final year BTech student passionate about data science and machine learning. I enjoy building projects with Python, R, SQL, and advanced ML tools to solve real-world challenges.
+      </p>
+      <div class="header-btns">
+        <a href="#contact" class="btn btn-cta">Hire me</a>
+        <a href="#work" class="btn btn-secondary">See my work</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Selected Work Section -->
+  <!-- Selected Work Section -->
+  <section class="work">
+    <div class="container">
+      <h2 class="h2" id="work">Selected Work</h2>
+      <div class="work-boxes">
+        <!-- Project 1: FWI Prediction Web Application -->
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">FWI Prediction Web Application</h3>
+            <p class="work-text">
+              Built a web application that predicts fire weather index using machine learning. Implemented data preprocessing and feature engineering. Created an interactive frontend using HTML and CSS.
+            </p>
+            <ol class="work-technologies">
+              <li>Python</li>
+              <li>Machine Learning</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ol>
+            <div class="work-links">
+              <a href="https://github.com/itssahilwhat/FWI-Model-Predictor" target="_blank" rel="noopener" class="link">Explore this project</a>
+              <a href="https://github.com/itssahilwhat/FWI-Model-Predictor" target="_blank" rel="noopener" title="Source code">
+                <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+              </a>
+            </div>
+          </div>
+          <picture class="work-img">
+            <img loading="lazy" src="assets/images/work/fwi.png" alt="FWI Prediction Web Application" />
+          </picture>
+        </div>
+
+        <!-- Project 2: Bellabeat Case Study -->
+        <div class="work-box">
+          <div class="work-textbox">
+            <h3 class="h3">Bellabeat Case Study</h3>
+            <p class="work-text">
+              Analyzed fitness tracking data to uncover trends for Bellabeat’s marketing strategy. Provided recommendations to enhance user engagement and product appeal. Created interactive visualizations in Tableau and R for data insights.
+            </p>
+            <ol class="work-technologies">
+              <li>R</li>
+              <li>Tableau</li>
+              <li>SQL</li>
+            </ol>
+            <div class="work-links">
+              <a href="https://github.com/itssahilwhat/Bellabeat-Case-Study" target="_blank" rel="noopener" class="link">Explore this project</a>
+              <a href="https://github.com/itssahilwhat/Bellabeat-Case-Study" target="_blank" rel="noopener" title="Source code">
+                <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+              </a>
+            </div>
+          </div>
+          <picture class="work-img">
+            <img loading="lazy" src="assets/images/work/bellabeat.png" alt="Bellabeat Case Study" />
+          </picture>
+        </div>
+
+        <!-- Project 3: Local Business Directory Platform -->
+<!--        <div class="work-box">-->
+<!--          <div class="work-textbox">-->
+<!--            <h3 class="h3">Local Business Directory Platform</h3>-->
+<!--            <p class="work-text">-->
+<!--              Developed an AI-powered dashboard for local vendors. Features: business insights, customer trend tracking, real-time reviews, AI chatbot (English & Gujarati), automated service management. Enabled users to search, book, and connect with businesses seamlessly.-->
+<!--            </p>-->
+<!--            <ol class="work-technologies">-->
+<!--              <li>Python</li>-->
+<!--              <li>SQL</li>-->
+<!--              <li>Power BI</li>-->
+<!--              <li>HTML</li>-->
+<!--              <li>CSS</li>-->
+<!--            </ol>-->
+<!--            <div class="work-links">-->
+<!--              <a href="https://github.com/yourusername/local-business-directory" target="_blank" rel="noopener" class="link">Explore this project</a>-->
+<!--              <a href="https://github.com/yourusername/local-business-directory" target="_blank" rel="noopener" title="Source code">-->
+<!--                <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />-->
+<!--              </a>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <picture class="work-img">-->
+<!--            <img loading="lazy" src="assets/images/work/local-business-directory.webp" alt="Local Business Directory Platform" />-->
+<!--          </picture>-->
+<!--        </div>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <div class="container">
+      <h2 class="h2" id="skills">My Toolkit</h2>
+      <div class="skills-imgs">
+        <img src="assets/images/skills/python.webp" alt="Python" class="skills-img" loading="lazy" title="Python">
+        <img src="assets/images/skills/r.webp" alt="R" class="skills-img" loading="lazy" title="R">
+        <img src="assets/images/skills/sql.webp" alt="SQL" class="skills-img" loading="lazy" title="SQL">
+        <img src="assets/images/skills/tableau.webp" alt="Tableau" class="skills-img" loading="lazy" title="Tableau">
+        <img src="assets/images/skills/powerbi.webp" alt="Power BI" class="skills-img" loading="lazy" title="Power BI">
+        <img src="assets/images/skills/spreadsheet.webp" alt="Spreadsheet" class="skills-img" loading="lazy" title="Spreadsheet">
+        <img src="assets/images/skills/pytorch.webp" alt="PyTorch" class="skills-img" loading="lazy" title="PyTorch">
+        <img src="assets/images/skills/flask.webp" alt="Flask" class="skills-img" loading="lazy" title="Flask">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h2 class="h2" id="contact">Send Message</h2>
+      <div class="contact-content">
+        <div class="contact-textbox">
+          <strong class="hire-alert">
+            <span class="indicator"></span>
+            Available for hire
+          </strong>
+          <p class="contact-text">
+            As a pre-final year computer engineering student, I’m passionate about data science and machine learning. I build projects using Python, R, SQL, and tools like Tableau and PyTorch to tackle real-world problems.
+          </p>
+          <p class="contact-text">
+            I’m eager to collaborate on innovative projects and explore opportunities in data-driven technologies.
+          </p>
+<!--          <img src="assets/images/sahil-signature.png" alt="Sahil Bhatia" class="signatures" loading="lazy" />-->
+        </div>
+        <form action="#" class="contact-form" netlify>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required inputmode="email" />
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-cta">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <nav>
+        <ol class="footer-links">
+          <li class="footer-link">
+            <a title="GitHub" href="https://github.com/itssahilwhat" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" />
+            </a>
+          </li>
+          <li class="footer-link">
+            <a title="LinkedIn" href="https://www.linkedin.com/in/itssahilwhat" target="_blank" rel="noopener">
+              <img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </li>
+        </ol>
+      </nav>
+      <p class="footer-text">
+        © 2025 Sahil Bhatia.
+      </p>
+      <label class="theme-switch" for="theme-switch">
+        <span>Dark Theme</span>
+        <input type="checkbox" id="theme-switch" role="switch"/>
+      </label>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
